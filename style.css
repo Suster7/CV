@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  list-style: none;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background: #9298a8;
+  font-size: 14px;
+  line-height: 22px;
+  color: #d6d6d6;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+/* *********************************************************** CV *********************************************************** */
+
+.profile_picture {
+  border-radius: 50%;
+  padding: 25px;
+}
+
+.bold {
+  font-weight: 700;
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.semi-bold {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.cv {
+  width: 800px;
+  height: auto;
+  display: flex;
+  margin: 50px auto;
+}
+
+.cv .cv_left {
+  width: 280px;
+  background: #13a353;
+}
+
+.cv .cv_left .cv_profile {
+  width: 100%;
+  height: 280px;
+}
+
+.cv .cv_left .cv_profile img {
+  width: 100%;
+  height: 100%;
+}
+
+.cv .cv_left .cv_content {
+  padding: 0 25px;
+}
+
+.cv .title {
+  margin-bottom: 20px;
+}
+
+.cv .cv_left .bold {
+  color: #f4f4f4;
+  text-align: center;
+}
+
+.cv .cv_left .regular {
+  color: #ffffff;
+  font-size: 16px;
+  text-align: center;
+  padding-bottom: 4px;
+}
+
+.cv .cv_item {
+  padding: 25px 0;
+  border-bottom: 2px solid #dfdfdf;
+}
+
+.cv .cv_right .cv_item:last-child,
+.cv .cv_left .cv_item:last-child {
+  border-bottom: 0;
+}
+
+.cv .cv_left ul li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.cv .cv_right ul li:last-child .cv .cv_left ul li:last-child {
+  margin-bottom: 0px;
+}
+
+.cv .cv_left ul li .icon {
+  width: 35px;
+  height: 35px;
+  background: rgb(37, 37, 37);
+  color: #13a353;
+  border-radius: 50%;
+  margin-right: 15px;
+  font-size: 16px;
+  position: relative;
+}
+
+.cv .cv_right .cv_hobby ul li i,
+.cv .icon i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.cv .cv_left ul li .data {
+  color: #f4f4f4;
+}
+
+.cv .cv_left .cv_skills ul li {
+  color: #f4f4f4;
+  justify-content: space-between;
+}
+
+.cv .cv_left .cv_skills ul li .skill_name {
+  width: 25%;
+}
+
+.cv .cv_left .cv_skills ul li .skill_progress {
+  width: 60%;
+  margin: 0 5px;
+  height: 5px;
+  background: #d6d6d6;
+  position: relative;
+}
+
+.cv .cv_left .cv_skills ul li .skill_percentage {
+  width: 15%;
+}
+
+.cv .cv_left .cv_skills ul li .skill_progress span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background: rgb(37, 37, 37);
+}
+
+.cv .cv_right {
+  width: 520px;
+  background: rgb(37, 37, 37);
+  padding: 25px;
+}
+
+.cv .cv_right .bold {
+  color: #13a353;
+}
+
+.cv .cv_right .cv_education ul {
+  padding-left: 40px;
+  overflow: hidden;
+}
+
+.cv .cv_right ul li {
+  position: relative;
+}
+
+.cv .cv_right ul li .date {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+
+.cv .cv_right ul li .info {
+  margin-bottom: 20px;
+}
+
+.cv .cv_right ul li:last-child .info {
+  margin-bottom: 0;
+}
+
+.cv .cv_right .cv_education ul li:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  left: -25px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  border: 2px solid #13a353;
+}
+
+.cv .cv_right .cv_education ul li:after {
+  content: "";
+  position: absolute;
+  top: 14px;
+  left: -21.5px;
+  width: 3px;
+  height: 92px;
+  background: #13a353;
+}
+
+.cv .cv_right .cv_hobby ul {
+  display: flex;
+  justify-content: space-between;
+}
+
+.cv .cv_right .cv_hobby ul li {
+  width: 80px;
+  height: 80px;
+  border: 2px solid #13a353;
+  border-radius: 50%;
+  position: relative;
+  color: #13a353;
+}
+
+.cv .cv_right .cv_hobby ul li i {
+  font-size: 30px;
+}
+
+.cv .cv_right .cv_hobby ul li:before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  right: -52px;
+  width: 50px;
+  height: 2px;
+  background: #13a353;
+}
+
+.cv .cv_right .cv_hobby ul li:last-child::before {
+  display: none;
+}
+
+.checked {
+  color: #13a353;
+}
+
+.bold_black {
+  font-weight: 700;
+  font-size: 18px;
+}
+
+.cv .cv_right .cv_language .bold_black {
+  display: flex;
+  padding: 8px;
+}
+
+.cv .cv_right .cv_language .bold_black span {
+  margin: 2px;
+}
+
+.cv .cv_right .cv_language .bold_black span:first-child {
+  padding-left: 15px;
+}
+
+.lng_name {
+  width: 115px;
+}
+
+.upper_hobby {
+  margin-bottom: 20px;
+}
+
+.soft_skills {
+  padding-top: 18px;
+}
+
+.soft_skill {
+  justify-content: center;
+  display: flex;
+  background-color: rgb(37, 37, 37);
+  padding-left: 10px;
+  border-radius: 10px;
+  font-size: 16px;
+  height: 32px;
+}
+
+.dot {
+  color: #13a353;
+}
